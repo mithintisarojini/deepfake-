@@ -1,0 +1,114 @@
+{
+  "identity": {
+    "name": "E1: The Anti-AI Designer",
+    "mission": "Create a 'Truth Lab' aesthetic that feels clinical, objective, yet human. Avoid generic SaaS blue/purple gradients. Use high-contrast Swiss design principles.",
+    "tone": "Objective, Scientific, Urgent, Clear",
+    "metaphor": "The Digital Microscope"
+  },
+  "typography": {
+    "primary_font": "Chivo",
+    "secondary_font": "Manrope",
+    "mono_font": "JetBrains Mono",
+    "usage": {
+      "headings": "Chivo, weight 900 or 300 (Extreme contrast). Tight tracking (-0.02em).",
+      "body": "Manrope, weight 400/500. Relaxed leading (1.6).",
+      "data_display": "JetBrains Mono, uppercase, small text for confidence scores and hashes."
+    },
+    "rules": [
+      "Never use Inter for headings.",
+      "Use massive font sizes (text-6xl+) for key metrics.",
+      "Label everything. Use tiny mono overlines for section headers."
+    ]
+  },
+  "colors": {
+    "theme": "light",
+    "palette": {
+      "background": "#FFFFFF",
+      "surface": "#F8F9FA",
+      "surface_highlight": "#F1F3F5",
+      "text_primary": "#111111",
+      "text_secondary": "#666666",
+      "border": "#E2E2E2",
+      "primary": "#111111",
+      "accent_real": "#008080",
+      "accent_fake": "#D90429",
+      "accent_warning": "#FB8B24",
+      "digital_silver": "#C0C0C0"
+    },
+    "gradients": {
+      "scan_beam": "linear-gradient(180deg, rgba(0,128,128,0) 0%, rgba(0,128,128,0.2) 100%)",
+      "alert_beam": "linear-gradient(180deg, rgba(217,4,41,0) 0%, rgba(217,4,41,0.2) 100%)"
+    },
+    "rules": [
+      "No full screen gradients.",
+      "Use color ONLY for status (Real vs Fake). The rest of the UI should be monochrome.",
+      "Dark mode is allowed ONLY for the Admin 'Control Room' view."
+    ]
+  },
+  "layout": {
+    "grid_system": "The Swiss Grid",
+    "spacing_scale": "Generous (p-8, p-12, p-24)",
+    "container_style": {
+      "marketing": "Tetris Grid (Asymmetric, overlapping)",
+      "app": "Control Room Grid (Dense, 1px borders)",
+      "card_style": "No shadow, 1px border, square corners (rounded-none or rounded-sm)."
+    },
+    "rules": [
+      "Always use visible grid lines (border-r, border-b) for data sections.",
+      "Avoid centering text unless it is a massive headline.",
+      "Use 'sticky' sidebars for navigation."
+    ]
+  },
+  "components": {
+    "buttons": {
+      "style": "Sharp corners or Pill shape (choose one and stick to it). High contrast (Black bg, White text).",
+      "hover": "Invert colors (White bg, Black text, Black border)."
+    },
+    "inputs": {
+      "style": "bg-surface, border-b-2 border-black focus:border-accent_real outline-none rounded-none.",
+      "label": "Uppercase mono label above input."
+    },
+    "cards": {
+      "style": "Flat, border-1 border-border, bg-white. No drop shadows unless hovering."
+    },
+    "visual_enhancers": [
+      "Scan lines (1px moving lines)",
+      "Focus brackets [ ] around key data",
+      "Noise texture overlays (opacity 5%)"
+    ]
+  },
+  "assets": {
+    "icons": "Phosphor Icons (Regular weight for UI, Duotone for Marketing)",
+    "images": {
+      "hero_background": "https://images.unsplash.com/photo-1541415534056-fad380cd68a5?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "user_context": "https://images.unsplash.com/photo-1684488624316-774ea1824d97?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "team_meeting": "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "abstract_security": "https://images.unsplash.com/photo-1639503547276-90230c4a4198?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "logo_placeholder": "Use text 'TRUTH_LENS' in Chivo Black font."
+  },
+  "motion": {
+    "type": "Mechanical & Precise",
+    "transitions": "duration-200 ease-out (Snap into place)",
+    "micro_interactions": [
+      "Hovering a card reveals a 'scan line' effect.",
+      "Buttons scale down slightly (0.98) on click.",
+      "Progress bars fill with a 'glitch' effect if fake."
+    ]
+  },
+  "universal_guidelines": {
+    "anti_slop_rules": [
+      "Do not use generic centered layouts.",
+      "Do not use 'Inter' for headings.",
+      "Do not use purple/blue gradients.",
+      "Do not use rounded-xl cards (stick to rounded-sm or none).",
+      "Always add data-testid to interactive elements."
+    ],
+    "accessibility": [
+      "Ensure text contrast is > 4.5:1.",
+      "Use focus-visible rings for keyboard navigation.",
+      "Support reduced motion preferences."
+    ]
+  },
+  "instructions_to_main_agent": "You are building a tool for truth. The design must feel like a scientific instrument. Use the 'Control Room' grid for the dashboard. Use the 'Tetris' grid for the landing page. Rely heavily on the 'Chivo' font for character. When showing 'Fake' results, use the Deep Red accent. When showing 'Real', use Teal. Do not mix them."
+}
